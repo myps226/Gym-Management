@@ -9,15 +9,19 @@ h1 {
 }
 
 form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 30px;
 }
 
+input,
 button {
-    grid-column: span 2;
     padding: 10px;
+    font-size: 14px;
+}
+
+button {
     background: black;
     color: white;
     border: none;
@@ -38,4 +42,5 @@ td {
 
 button.delete {
     background: red;
+    color: white;
 }

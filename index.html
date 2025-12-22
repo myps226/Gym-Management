@@ -8,19 +8,18 @@
 </head>
 
 <body>
-
     <h1>🥊 Muay Thai Gym Membership</h1>
 
     <form id="member-form">
-        <input type="text" id="full_name" placeholder="Full Name" required />
-        <input type="number" id="age" placeholder="Age" />
-        <input type="text" id="gender" placeholder="Gender" />
-        <input type="text" id="phone" placeholder="Phone" />
-        <input type="email" id="email" placeholder="Email" />
-        <input type="text" id="membership_type" placeholder="Membership Type" />
-        <input type="date" id="membership_start" />
-        <input type="date" id="membership_end" />
-        <input type="text" id="training_level" placeholder="Training Level" />
+        <input id="full_name" placeholder="Full Name" required />
+        <input id="age" type="number" placeholder="Age" />
+        <input id="gender" placeholder="Gender" />
+        <input id="phone" placeholder="Phone" />
+        <input id="email" type="email" placeholder="Email" />
+        <input id="membership_type" placeholder="Membership Type" />
+        <input id="membership_start" type="date" />
+        <input id="membership_end" type="date" />
+        <input id="training_level" placeholder="Training Level" />
         <button type="submit">Add Member</button>
     </form>
 
@@ -31,12 +30,13 @@
                 <th>Type</th>
                 <th>Level</th>
                 <th>Status</th>
-                <th>Actions</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody id="member-list"></tbody>
     </table>
 
+    <!-- Supabase v2 -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="app.js"></script>
 </body>
